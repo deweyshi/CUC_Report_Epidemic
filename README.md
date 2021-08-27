@@ -12,7 +12,7 @@ python Python 3.8.8
 selenium 4.0.0-beta-4
 ```
 #### 文件说明
-`c.txt`存放cookies，一般为json格式，可使用EditThisCookie插件导出。
+`c.txt`存放cookies，一般为json格式，可使用[EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)插件导出。
 #### 安装Selenium 4
 `pip install selenium==4.0.0.b4`
 #### 下载对应的Chrome和ChromeDriver
