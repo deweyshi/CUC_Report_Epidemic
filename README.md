@@ -1,5 +1,10 @@
 # CUC_Report_Epidemic
 中国传媒大学疫情健康报告打卡
+### 一、使用Requests
+需要修改url1:填报的网址,  
+模拟提交一次，Chrome f12 复制cookie，  
+post_data复制后修改其中的两个日期为变量。
+### 二、使用Selenium
 #### 测试环境
 ```
 Ubuntu 20.04.2 LTS (GNU/Linux 5.8.0-1038-oracle x86_64)
@@ -7,7 +12,7 @@ python Python 3.8.8
 selenium 4.0.0-beta-4
 ```
 #### 文件说明
-`c.txt`存放cookies，一般为json格式
+`c.txt`存放cookies，一般为json格式，可使用EditThisCookie插件导出。
 #### 安装Selenium 4
 `pip install selenium==4.0.0.b4`
 #### 下载对应的Chrome和ChromeDriver
