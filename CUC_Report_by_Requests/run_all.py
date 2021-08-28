@@ -5,4 +5,4 @@ print(file_list)
 for filename in file_list:
     if os.path.isfile(filename) and filename.endswith('.py') and filename.find("run") == -1:
         print(filename,'\n')
-        os.system('python {}'.format(filename))
+        os.system('/root/anaconda3/bin/python {}'.format(filename))
