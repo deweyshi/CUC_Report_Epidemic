@@ -3,6 +3,7 @@ import re
 import time
 import datetime
 import logging
+import sys
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s %(filename)s[line:%(lineno)d] %(message)s',
@@ -52,6 +53,10 @@ def main():
         "x-jdy-ver": jdy_ver,
         "cookie": cookie
     }
+    if '简道云登录' in result1.text:
+        logging.info(result1.text)
+        logging.info('You need to update your cookie!')
+        sys.exit()
     result2 = ss.post(url2, headers=headers2, json=post_data)
     logging.info(result2.text)
 
