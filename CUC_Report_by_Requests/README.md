@@ -3,4 +3,4 @@
 # 教程
 第一次使用需要修改成自己的校园网账号密码，且提交的表单要修改成自己的（F12抓一次数据），表单中的时间、日期需要修改。支持多用户，每个用户建一个py文件，都放CUC_Report文件夹下就行了。在自己机器上可以用crontab，定时运行run_all.py就行。
 # 配合GitHub Actions
-也可以用GitHub Actions，每天定时打卡（GitHub Actions的cron可能不太准时），然后发邮件通知打卡结果。可以参考我的模板。
+也可以用GitHub Actions，每天定时打卡（GitHub Actions的cron可能不太准时），然后发邮件通知打卡结果。可以参考我的模板python-app.yml。
