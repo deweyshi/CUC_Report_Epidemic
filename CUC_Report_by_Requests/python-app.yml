@@ -39,8 +39,9 @@ jobs:
     - name: Check failures
       id: CF
       run: |
-        cat ./CUC_Report/log.txt &&
-        fail_num=`expr $(ls -l ./CUC_Report|grep "py$"|wc -l) - $(grep -o '"check_code":0' ./CUC_Report/log.txt | wc -l)` &&
+        py_nums=$(ls -l ./CUC_Report|grep "py$"|wc -l) &&
+        suc_nums=$(grep -o '"check_code":0' ./CUC_Report/log.txt | wc -l) &&
+        fail_num=$[py_nums - suc_nums] &&
         if [ $fail_num -eq 0 ];then CUC_JOB_STATUS='[Success]';else CUC_JOB_STATUS='Number of [Failures]: '$fail_num;fi &&
         echo $CUC_JOB_STATUS &&
         echo "::set-output name=CUC_JOB_STATUS::$CUC_JOB_STATUS"
