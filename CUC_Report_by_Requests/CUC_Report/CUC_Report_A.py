@@ -38,7 +38,7 @@ class JDY:
         self.__sso_url = 'https://sso.cuc.edu.cn'
         self.__jdy = 'https://www.jiandaoyun.com'
         self.__jdy_url = self.__jdy + '/sso/custom/wxd6d77b944b3b0051/iss'
-        self.__jdy_create = self.__jdy + '/_/data/create'
+        self.__jdy_create = self.__jdy + '/_/data_process/data/create'
         self.__ecp_url = ''
         self.__pev_val = ''
         
